@@ -35,7 +35,7 @@ export const Message = styled.h1`
   text-align: center;
 `;
 
-export const Titel = styled.h1`
+export const Title = styled.h1`
   text-align: center;
   color: blue;
 `;
