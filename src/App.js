@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useState } from "react";
+
+//Data
+
+// components
+import InputBar from "./components/InputBar";
+import { SubmitBtn, HintBtn } from "./components/SubmitBtn";
 
 function App() {
+  const [playerInput, setPlayerInput] = useState(null);
+  // const [answred, setAnswred] = useState(null);
+  const [displayMessage, setDisplaymessage] = useState("");
+
+  // const DisplayMessgae = () => {
+  //   return displayMessage;
+  // };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {displayMessage}
+      <InputBar setPlayerInput={setPlayerInput} />
+      <SubmitBtn
+        playerInput={playerInput}
+        setDisplaymessage={setDisplaymessage}
+      ></SubmitBtn>
+      <HintBtn setDisplaymessage={setDisplaymessage}></HintBtn>
     </div>
   );
 }
