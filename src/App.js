@@ -7,6 +7,9 @@ import { useState } from "react";
 import InputBar from "./components/InputBar";
 import { SubmitBtn, HintBtn } from "./components/SubmitBtn";
 
+// styles
+import { Titel, Discription } from "./StylesFolder/Styles";
+
 function App() {
   const [playerInput, setPlayerInput] = useState(null);
   // const [answred, setAnswred] = useState(null);
@@ -18,6 +21,12 @@ function App() {
 
   return (
     <div>
+      <div>
+        <Titel>Guess The Number</Titel>
+        <Discription>
+          you have to guess the number correct number between 0 and 30
+        </Discription>
+      </div>
       {displayMessage}
       <InputBar setPlayerInput={setPlayerInput} />
       <SubmitBtn

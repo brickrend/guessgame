@@ -34,3 +34,13 @@ export const HintBtnComp = styled.button`
 export const Message = styled.h1`
   text-align: center;
 `;
+
+export const Titel = styled.h1`
+  text-align: center;
+  color: blue;
+`;
+
+export const Discription = styled.p`
+  text-align: center;
+  color: blue;
+`;
