@@ -8,7 +8,7 @@ import InputBar from "./components/InputBar";
 import { SubmitBtn, HintBtn } from "./components/SubmitBtn";
 
 // styles
-import { Titel, Discription } from "./StylesFolder/Styles";
+import { Title, Discription } from "./StylesFolder/Styles";
 
 function App() {
   const [playerInput, setPlayerInput] = useState(null);
@@ -22,7 +22,7 @@ function App() {
   return (
     <div>
       <div>
-        <Titel>Guess The Number</Titel>
+        <Title>Guess The Number</Title>
         <Discription>
           you have to guess the number correct number between 0 and 30
         </Discription>
